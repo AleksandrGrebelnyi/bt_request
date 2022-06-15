@@ -5,8 +5,8 @@ import os
 
 
 app = Flask(__name__)
-TOKEN = os.getenv.get('TOKEN')
-MY_ID = os.getenv.get('MY_ID')
+TOKEN = os.environ.get('TOKEN')
+MY_ID = os.environ.get('MY_ID')
 bot = telebot.TeleBot(TOKEN, parse_mode=None)  # , parse_mode=None
 user_info = {}
 
